@@ -1,0 +1,55 @@
+$main-color: rgb(51, 51, 51)
+$main-color: #3355ff
+$brand-font: 'Raleway', Helvetica
+
+html
+  font-family: Helvetica
+  color: rgb(51, 51, 51)
+  line-height: 26px
+  font-size: 16px
+  background: #f5f5ff
+
+.main
+  border-top: 5px solid $main-color
+
+.header
+  padding: 20px 0
+
+a.brand
+  margin-top: 22px
+  display: block
+  font-family: $brand-font
+  font-size: 30px
+  margin-bottom: 14px
+
+img.photo
+  height: 150px
+  width: 150px
+  display: block
+  margin-bottom: 14px
+  border-radius: 150px
+
+@media(max-width:780px)
+  img.photo
+    height: 100px
+    width: 100px
+
+.tagline
+  margin-left: 2px
+  color: #aaa
+  font-height: 16px
+  line-height: 25px
+  margin-bottom: 10px
+
+.sociallist, .sociallist li
+  display: inline
+  padding: 0
+  margin: 0
+  margin-left: -2px
+
+.footer
+  margin-top: 20px
+  font-size: 12px
+  line-height: 16px
+  a, a:link, a:visited, a:hover, a:active
+    text-decoration: underline

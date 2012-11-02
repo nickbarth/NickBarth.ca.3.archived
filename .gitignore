@@ -1,0 +1,6 @@
+.sass-cache
+bin/
+public/assets/javascripts/*.js
+public/assets/stylesheets/*.css
+logs/
+conf/

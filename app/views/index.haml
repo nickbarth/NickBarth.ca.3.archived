@@ -1,0 +1,86 @@
+!!! 5
+%html
+  %head
+    %title Nick Barth - Business strategists and software engineer
+    %meta{ name: 'viewport', content: 'width=device-width, minimum-scale=0.5, maximum-scale=0.5' }/
+    %link{ rel: :icon, href: to('/favicon.ico'), type: 'image/x-icon'}/
+    %link{ rel: :stylesheet, type: 'text/css', href: to('/assets/stylesheets/application.css') }/
+  %body
+    .notice
+      Your message has been delivered.
+    .main
+      .container
+        .lcolumn
+          %a.brand
+            Nick Barth
+          .tagline
+            Business strategist and software engineer
+          %img.photo{ src: to('/images/nick.jpg') }
+          %p.text
+            %ul.sociallist
+              = social_tag "github", "http://github.com/nickbarth"
+              = social_tag "twitter", "http://twitter.com/nickbarth"
+              = social_tag "linkedin", "http://linkedin.com/in/barthn/"
+              = social_tag "envelope-alt", "mailto:nick@nickbarth.ca"
+        .rcolumn
+          .page
+            %a.lnk-profile{ name: 'profile' }
+            %h2 Profile
+            %p.text
+              I am a passionate entrepreneur and experienced developer.
+              If you're interested in working together with me feel free to
+              #{link_to '#contact', 'contact me'} and check out some of the
+              #{link_to '#projects', 'projects'} I'm involved in.
+            %h2 Projects
+            %p.text
+              Here are some of the projects I am currently involved in.
+            %a.lnk-projects{ name: 'projects' }
+            %ul.projects
+              = project_tag("Startup Edmonton", "/images/startupedm.png", "http://startupedmonton.com/")
+              = project_tag("Cinder", "/images/cinder.jpg", "http://www.facebook.com/CinderChats")
+              = project_tag("Ruby Meetup", "/images/yegrb.jpg", "http://www.yegrb.com/")
+              .clear
+            %a.lnk-contact{ name: 'contact' }
+            %h2 Contact
+            %p.text
+              If you'd like to get in contact with me you can reach me at
+              <a href='mailto:contact@nickbarth.com'>contact@nickbarth.ca</a>
+              and by using the contact form below.
+            %form.contact-form{ action: '/contact', method: 'post' }
+              %fieldset
+                %ol
+                  %li
+                    %label
+                      %span Name
+                      %input.input-name{ type: 'text' }
+                      .clear
+                  %li
+                    %label
+                      %span Email
+                      %input.input-email{ type: 'text' }
+                      .clear
+                  %li
+                    %label
+                      Message
+                      %textarea.input-message{ type: 'text' }
+                  %li
+                    %input{ type: 'submit', value: 'Send' }
+      .clear
+    .footer
+      .container
+        .lcolumn
+          .clear
+        .rcolumn.copy
+          &copy; <a href='mailto:contact@nickbarth.com'>Nick Barth</a>. All Rights Reserved.
+        .clear
+    %script{ type: 'text/javascript', src: '//code.jquery.com/jquery-1.8.2.min.js' }
+    %script{ type: 'text/javascript', src: to('/assets/javascripts/application.js') }
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-26355941-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
