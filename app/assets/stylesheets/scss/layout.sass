@@ -1,51 +1,27 @@
-$main-color: rgb(51, 51, 51)
-$main-color: #3355ff
-$brand-font: 'Raleway', Helvetica
+@import shared
+
+*
+  -webkit-appearance: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  resize: none
+  outline: none
+  margin: 0
+  padding: 0
 
 html
-  font-family: Helvetica
+  @include regular-font
+  background: $light-color
   color: rgb(51, 51, 51)
-  line-height: 26px
-  font-size: 16px
-  background: #f5f5ff
+  font-family: Helvetica
 
 .main
+  @include regular-font
   border-top: 5px solid $main-color
-
-.header
-  padding: 20px 0
-
-a.brand
-  margin-top: 22px
-  display: block
-  font-family: $brand-font
-  font-size: 30px
-  margin-bottom: 14px
-
-img.photo
-  height: 150px
-  width: 150px
-  display: block
-  margin-bottom: 14px
-  border-radius: 150px
-
-@media(max-width:780px)
-  img.photo
-    height: 100px
-    width: 100px
-
-.tagline
-  margin-left: 2px
-  color: #aaa
-  font-height: 16px
-  line-height: 25px
-  margin-bottom: 10px
-
-.sociallist, .sociallist li
-  display: inline
-  padding: 0
-  margin: 0
-  margin-left: -2px
 
 .footer
   margin-top: 20px

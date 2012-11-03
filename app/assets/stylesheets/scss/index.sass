@@ -1,87 +1,92 @@
-$main-color: rgb(51, 51, 51)
-$main-color: #3355ff
-$brand-font: 'Raleway', Helvetica
+@import shared
 
-.banner
-  height: 200px
-  overflow: hidden
+.notice
+  background: $light-color
+  border-bottom: 1px solid #ddd
+  color: #999
+  display: none
+  padding: 4px
+  position: absolute
+  position: fixed
+  text-align: center
+  width: 100%
 
-.image
-  margin: 0 auto
-  display: block
-  position: relative
-  border: none
-  top: -300px
+.brand
+  color: lighten($main-color, 10%)
+  font-family: $brand-font
+  font-size: 30px
+  margin-bottom: 14px
+  margin-top: 22px
+
+.tagline
+  @include regular-font
+  color: #aaa
+  margin: 0 0 10px 2px
+
+.profile
+  height: 150px
+  width: 150px
+  margin-bottom: 14px
+  border-radius: 50%
+  @media(max-width:780px)
+    height: 100px
+    width: 100px
 
 .projects
   padding-bottom: 15pt
-  width: 100%
 
 .project
   margin: 5px
   float: left
-  display: block
-  a, a:link, a:visited, a:hover, a:active
-    text-decoration: none
-    border: none
 
 .caption
   display: block
-  font-size: 10pt
   text-align: center
-  line-height: 25pt
-
-.project .photo
-  display: block
-  height: 100px
-  width: 120px
-  overflow: hidden
-  margin: 0
-  padding: 0
+  font-size: 12px
+  line-height: 20px
 
 form
+  @include regular-font
   color: #777
-  padding: 5px
   margin-top: -20px
-  width: 100%
-  text-align: center
-  fieldset
-    text-align: left
-    display: inline
-    width: 100%
-    margin: 0 auto
   li
-    padding: 5px
+    padding: 5px 10px
   fieldset
     border: none
+  label span, input[type=text]
+    height: 30px
+    line-height: 30px
   label span
+    display: block
     float: left
-    display: block
     width: 10%
-    font-height: 16px
-    line-height: 25px
+  input, textarea
+    background: $light-color
+    border: 1px solid #ccc
+    float: right
+    width: 100%
   input[type=text]
-    float: right
-    border: none
-    border: 1px solid #ccc
-    width: 90%
-    background: #f5f5ff
-    font-height: 16px
-    line-height: 25px
     padding: 0 5px
-  textarea
-    margin-top: 8px
-    display: block
-    border: 1px solid #ccc
-    width: 100%
-    padding: 5px
-    background: #f5f5ff
+    width: 90%
   input[type=submit]
-    border: 1px solid #ccc
-    padding: 10px
-    width: 100%
-    float: right
-    background-color: #eee
-    color: lighten($main-color, 10%)
-    background: #f5f5ff
     color: #888
+    padding: 10px
+  textarea
+    padding: 5px
+
+.page
+  border-left: 1px solid #ddd
+  border-right: 1px solid #ddd
+  border-bottom: 1px solid #ddd
+  background: #fff
+  color: #555
+  padding: 22px 30px 30px
+  ul
+    margin: -40px 0 0 5px
+  h2
+    color: lighten($main-color, 10%)
+    font-family: $brand-font
+    font-size: 24px
+    margin: 0 10px 10px 10px
+  p
+    margin: 20px 10px 40px 10px

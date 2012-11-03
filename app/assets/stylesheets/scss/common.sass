@@ -1,41 +1,20 @@
-$main-color: rgb(51, 51, 51)
-$main-color: #3355ff
-$brand-font: 'Raleway', Helvetica
-
-*
-  -webkit-appearance: none
-  -moz-appearance: none
-  -webkit-appearance: none
-  -moz-appearance: none
-  -moz-box-sizing: border-box
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
-  resize: none
-  outline: none
-  margin: 0
-  padding: 0
+@import shared
 
 a, a:link, a:visited, a:hover, a:active
   color: lighten($main-color, 10%)
   text-decoration: none
 
 ::selection
-  background: $main-color
+  background: lighten($main-color, 30%)
 
 ::-moz-selection
-  background: $main-color
+  background: lighten($main-color, 30%)
 
 .container
   margin: 0 auto
   width: 1000px
-
-@media(max-width:780px)
-  .container
+  @media (max-width:780px)
     width: 100%
-
-.navigation
-  ul, ul li
-    display: inline
 
 .tcenter
   text-align: center
@@ -51,38 +30,7 @@ a, a:link, a:visited, a:hover, a:active
 .clear
   clear: both
 
-.notice
-  width: 100%
-  text-align: center
-  position: absolute
-  position: fixed
-  background: lighten($main-color, 25%)
-  padding: 4px
-  font-family: sans-serif
-  color: #999
-  border-bottom: 1px solid #ddd
-  background: #f5f5ff
-  display: none
-
-.page
-  border-left: 1px solid #ddd
-  border-right: 1px solid #ddd
-  border-bottom: 1px solid #ddd
-  background: #fff
-  color: #555
-  padding: 22px 30px 30px
-  ul
-    margin-top: -40px
-    margin-left: 5px
-  h2
-    font-family: $brand-font
-    font-size: 24px
-    color: lighten($main-color, 10%)
-    margin: 0 10px 10px
-  p
-    margin: 20px 10px 40px
-    line-height: 25px
-    font-size: 16px
-  em
-    font-style: italic
-    color: #aaa
+ul.inline, .inline li
+  display: inline
+  padding: 0
+  margin: 0

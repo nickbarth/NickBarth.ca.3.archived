@@ -11,13 +11,13 @@
     .main
       .container
         .lcolumn
-          %a.brand
+          .brand
             Nick Barth
           .tagline
             Business strategist and software engineer
-          %img.photo{ src: to('/images/nick.jpg') }
+          %img.profile{ src: to('/images/nick.jpg') }
           %p.text
-            %ul.sociallist
+            %ul.inline
               = social_tag "github", "http://github.com/nickbarth"
               = social_tag "twitter", "http://twitter.com/nickbarth"
               = social_tag "linkedin", "http://linkedin.com/in/barthn/"
@@ -63,6 +63,7 @@
                     %label
                       Message
                       %textarea.input-message{ type: 'text' }
+                      .clear
                   %li
                     %input{ type: 'submit', value: 'Send' }
       .clear
