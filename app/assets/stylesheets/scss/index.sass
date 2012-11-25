@@ -49,35 +49,32 @@
   line-height: 20px
 
 form
+  padding: 5px
   @include regular-font
+  border: none
   color: #777
-  margin-top: -20px
-  li
-    padding: 5px 10px
-  fieldset
-    border: none
+  display: block
   label span, input[type=text]
     height: 30px
     line-height: 30px
   label span
     display: block
-    float: left
-    width: 10%
-    @media (max-width:780px)
-      width: 20%
   input, textarea
-    background: $light-color
+    background: #fff
     border: 1px solid #ccc
-    float: right
+    width: 95%
+  textarea
+    height: 90px
     width: 100%
   input[type=text]
     padding: 0 5px
-    width: 90%
-    @media (max-width:780px)
-      width: 80%
   input[type=submit]
-    color: #888
+    color: #fff
+    background: lighten($main-color, 10%)
+    margin-top: 20px
     padding: 10px
+    width: 100%
+    border: none
   textarea
     padding: 5px
 

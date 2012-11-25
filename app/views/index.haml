@@ -14,7 +14,7 @@
           .brand
             Nick Barth
           .tagline
-            Business strategist and software engineer
+            Business strategist and solutions architect
           %img.profile{ src: to('/images/nick.jpg') }
           %p.text
             %ul.inline
@@ -27,13 +27,13 @@
             %a.lnk-profile{ name: 'profile' }
             %h2 Profile
             %p.text
-              I am a passionate entrepreneur and experienced developer.
+              I am a passionate business consultant and experienced techinal lead.
               If you're interested in working together with me feel free to
               #{link_to '#contact', 'contact me'} and check out some of the
               #{link_to '#projects', 'projects'} I'm involved in.
             %h2 Projects
             %p.text
-              Here are some of the projects I am currently involved in.
+              Here are some of the organizations I am currently involved in.
             %a.lnk-projects{ name: 'projects' }
             %ul.projects
               = project_tag("Startup Edmonton", "/images/startupedm.png", "http://startupedmonton.com/")
@@ -46,24 +46,25 @@
               If you'd like to get in contact with me you can reach me at
               <a href='mailto:contact@nickbarth.com'>contact@nickbarth.ca</a>
               and by using the contact form below.
+            .clear
             %form.contact-form{ action: '/contact', method: 'post' }
               %fieldset
-                %ol
+                %ol.lside
                   %li
                     %label
                       %span Name
                       %input.input-name{ type: 'text' }
-                      .clear
                   %li
                     %label
                       %span Email
                       %input.input-email{ type: 'text' }
-                      .clear
+                %ol.rside
                   %li
                     %label
-                      Message
+                      %span Message
                       %textarea.input-message{ type: 'text' }
-                      .clear
+                .clear
+                %ol
                   %li
                     %input{ type: 'submit', value: 'Send' }
             %p.footer
