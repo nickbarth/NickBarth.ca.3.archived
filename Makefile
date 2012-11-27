@@ -10,8 +10,6 @@ prod_start:
 	cp conf/nginx.conf /etc/nginx/conf.d/${CONFIG}
 	service nginx reload
 	mkdir ./logs/ 2>/dev/null; true
-	mkdir -p public/assets/javascripts/; true
-	mkdir -p public/assets/stylesheets/; true
 	thin start -S $(SOCKET) -l ./logs/server.log -P ./logs/pid.log -e production -s 1
 
 prod_stop:
