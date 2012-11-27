@@ -1,0 +1,26 @@
+span.tooltip
+  display: none
+  top: 500px
+  left: 500px
+  position: absolute
+  width: 80px
+  height: 20px
+  line-height: 20px
+  font-size: 10px
+  text-align: center
+  color: rgb(255, 255, 255)
+  background: rgb(0, 0, 0)
+  border-radius: 2px
+  text-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 1px
+  box-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 2px 0px
+
+span.tooltip:after
+  content: ""
+  position: absolute
+  width: 0
+  height: 0
+  border-width: 10px
+  border-style: solid
+  border-color: #000000 transparent transparent transparent
+  top: 20px
+  left: 30px
