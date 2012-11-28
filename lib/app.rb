@@ -19,9 +19,11 @@ class SinatraApp
     def social_tag(icon, link)
       tooltip = icon
       tooltip = 'email' if icon == 'envelope-alt'
+      tooltip = 'blog' if icon == 'book'
+
       capture_haml do
         haml_tag :li, :< do
-          haml_tag :a, :<, href: link, target: '_blank', "data-tooltip" => icon do
+          haml_tag :a, :<, href: link, target: '_blank', "data-tooltip" => tooltip.capitalize do
             haml_tag :i, :<, class: "icon-#{icon} icon-large"
           end
         end
