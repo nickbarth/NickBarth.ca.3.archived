@@ -1,5 +1,7 @@
+@import shared
+
 span.tooltip
-  display: none
+  opacity: 0
   top: 500px
   left: 500px
   position: absolute
@@ -13,6 +15,7 @@ span.tooltip
   border-radius: 2px
   text-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 1px
   box-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 2px 0px
+  @include transition(opacity 500ms ease-in-out)
 
 span.tooltip:after
   content: ""

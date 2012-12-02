@@ -5,3 +5,10 @@ $brand-font: 'Raleway', Helvetica
 @mixin regular-font
   line-height: 25px
   font-size: 16px
+
+@mixin transition($type)
+  -webkit-transition: $type
+  -moz-transition: $type
+  -ms-transition: $type
+  -o-transition: $type
+  transition: $type

@@ -7,9 +7,9 @@ do ($ = jQuery) ->
       $tooltip
         .css
           top: "#{position.top-40}px",
-          left: "#{position.left-24}px"
+          left: "#{position.left-24}px",
+          opacity: 1
         .text($this.data('tooltip'))
-        .stop()
-        .fadeIn()
     , ->
-      $tooltip.stop().fadeOut()
+      $tooltip.css
+        opacity: 0
