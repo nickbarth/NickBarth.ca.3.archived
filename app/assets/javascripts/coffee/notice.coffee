@@ -2,7 +2,6 @@ do ($ = jQuery) ->
   $ ->
     $inputs = $('.input-name, .input-email, .input-message')
     $notice = $('.notice')
-
     $('.contact-form').submit ->
       userName = $('.input-name').val()
       userEmail = $('.input-email').val()
