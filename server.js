@@ -12,7 +12,7 @@ app.set('view options', { layout: false });
 app.set('views', __dirname + '/public/views');
 
 app.get('/', function (req, res) {
-  res.render('index', { pageHtml: page.text });
+  res.render('index');
 });
 
 app.listen(port);
