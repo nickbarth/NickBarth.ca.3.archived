@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @font-face {
   font-family: 'FontAwesome';
-  src: url('http://nickbarth.ca/font/fontawesome-webfont.eot');
-  src: url('http://nickbarth.ca/font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-       url('http://nickbarth.ca/font/fontawesome-webfont.woff') format('woff'),
-       url('http://nickbarth.ca/font/fontawesome-webfont.ttf') format('truetype'),
-       url('http://nickbarth.ca/font/fontawesome-webfont.svg#FontAwesome') format('svg');
+  src: url('/font/fontawesome-webfont.eot');
+  src: url('/font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/font/fontawesome-webfont.woff') format('woff'),
+       url('/font/fontawesome-webfont.ttf') format('truetype'),
+       url('/font/fontawesome-webfont.svg#FontAwesome') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,7 +34,6 @@
     */
 /*  Font Awesome styles
     ------------------------------------------------------- */
-
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1070,11 +1069,3 @@ span.tooltip:after {
   border-color: black transparent transparent transparent;
   top: 20px;
   left: 30px; }
-/*
-
-
-
-
-
- */
-
