@@ -1,0 +1,22 @@
+{
+  "name": "nickbarth.ca",
+  "version": "1.0.0",
+  "description": "The personal site of Nick Barth.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nickbarth/NickBarth.ca.git"
+  },
+  "author": "Nick Barth",
+  "dependencies": {
+    "express": "~3.1.0",
+    "ejs": "~0.8.3",
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
