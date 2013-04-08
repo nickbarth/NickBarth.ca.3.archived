@@ -33,11 +33,13 @@ class SinatraApp
     def project_tag(project, image, url)
       capture_haml do
         haml_tag 'li.project' do
-          haml_tag 'a.photo', :<, href: url, target: '_blank' do
-            haml_tag :img, src: image
-          end
-          haml_tag 'a.caption', :<, href: url, target: '_blank' do
-            haml_concat project
+          haml_tag 'a', :<, href: url, target: '_blank' do
+            haml_tag '.photo' do
+              haml_tag :img, src: image
+            end
+            haml_tag '.caption' do
+              haml_concat project
+            end
           end
         end
       end.strip
