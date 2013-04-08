@@ -1,7 +1,7 @@
 var newrelic = require('newrelic'),
     express = require('express'),
     app = express(),
-    port = process.env.PORT || 3000;
+    port = process.env.PORT || 5000;
 
 app.configure(function(){
   app.use('/assets', express.static(__dirname + '/assets'));

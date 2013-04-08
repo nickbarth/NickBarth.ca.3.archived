@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @font-face {
   font-family: 'FontAwesome';
-  src: url('/font/fontawesome-webfont.eot');
-  src: url('/font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/font/fontawesome-webfont.woff') format('woff'),
-       url('/font/fontawesome-webfont.ttf') format('truetype'),
-       url('/font/fontawesome-webfont.svg#FontAwesome') format('svg');
+  src: url('http://nickbarth.ca/font/fontawesome-webfont.eot');
+  src: url('http://nickbarth.ca/font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://nickbarth.ca/font/fontawesome-webfont.woff') format('woff'),
+       url('http://nickbarth.ca/font/fontawesome-webfont.ttf') format('truetype'),
+       url('http://nickbarth.ca/font/fontawesome-webfont.svg#FontAwesome') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,6 +34,7 @@
     */
 /*  Font Awesome styles
     ------------------------------------------------------- */
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -859,14 +860,25 @@ table {
 	border-spacing: 0;
 }
 a, a:link, a:visited, a:hover, a:active {
-  color: #93b739;
-  text-decoration: none; }
+  color: #3f99e9;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out; }
+
+a:hover {
+  color: #1673c6; }
+
+a img {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out; }
+
+a:hover img {
+  opacity: 0.8; }
 
 ::selection {
-  background: #dbe9b9; }
+  background: #e0eefb; }
 
 ::-moz-selection {
-  background: #dbe9b9; }
+  background: #e0eefb; }
 
 .container {
   margin: 0 auto;
@@ -915,7 +927,7 @@ ol.rside {
   opacity: 0;
   display: none; }
 .notice {
-  background: #f5f2ee;
+  background: #56a5ec;
   border-bottom: 1px solid #dddddd;
   color: #999999;
   display: none;
@@ -926,7 +938,7 @@ ol.rside {
   width: 100%; }
 
 .brand {
-  color: #b4d16b;
+  color: #84bdf1;
   font-family: "Raleway", Helvetica;
   font-size: 30px;
   margin-bottom: 14px;
@@ -989,7 +1001,7 @@ form {
     padding: 0 5px; }
   form input[type=submit] {
     color: white;
-    background: #b4d16b;
+    background: #84bdf1;
     margin-top: 20px;
     padding: 10px;
     width: 100%;
@@ -1004,7 +1016,7 @@ form {
   .page ul {
     margin: -40px 0 0 5px; }
   .page h2 {
-    color: #b4d16b;
+    color: #84bdf1;
     font-family: "Raleway", Helvetica;
     font-size: 24px;
     margin: 0 10px 10px 10px; }
@@ -1032,7 +1044,7 @@ html {
 .main {
   line-height: 25px;
   font-size: 16px;
-  border-top: 5px solid #a0c544; }
+  border-top: 5px solid #56a5ec; }
 
 p.footer {
   font-size: 12px;
@@ -1069,3 +1081,11 @@ span.tooltip:after {
   border-color: black transparent transparent transparent;
   top: 20px;
   left: 30px; }
+/*
+
+
+
+
+
+ */
+
